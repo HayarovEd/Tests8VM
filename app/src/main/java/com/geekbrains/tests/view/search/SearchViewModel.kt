@@ -33,7 +33,7 @@ class SearchViewModel(
     fun subscribeToLiveData() = liveData
 
     fun searchGitHub(searchQuery: String) {
-        //Dispose
+
         val compositeDisposable = CompositeDisposable()
         compositeDisposable.add(
             repository.searchGithub(searchQuery)
